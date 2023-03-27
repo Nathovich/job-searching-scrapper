@@ -10,7 +10,7 @@ However, the code itself is quite easily manipulated to work for other purposes.
 
 ## To be developed:
 
-- url and both keywords list to be moved to separate files;
+- ~~url and both keywords list to be moved to separate files;~~ <b> DONE </b>
 - offers with more than 1 localization to be scraped with an offer link;
 - further scraping of the offers by checking requirements within each offer to be added;
 - whole code to be rewritten with the use of selenium;

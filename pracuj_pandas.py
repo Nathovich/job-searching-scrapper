@@ -1,87 +1,11 @@
 from bs4 import BeautifulSoup
 import requests
 import pandas
+from keywords import pracuj_job_keywords, pracuj_excluded_keywords
+from urls import pracuj_urls
 
 
 pracuj_job_info = []
-
-pracuj_urls = [
-    "https://www.pracuj.pl/praca/ma%C5%82opolskie;r,6/ostatnich%207%20dni;p,7?pn={no_page}&tc=0&ws=0&wm=full-office%2Chybrid%2Chome-office",
-    "https://www.pracuj.pl/praca/mazowieckie;r,7/ostatnich%207%20dni;p,7?et=1%2C3%2C17%2C4&pn={no_page}&tc=0&ws=0&wm=hybrid%2Chome-office",
-    "https://www.pracuj.pl/praca/wroclaw;wp/ostatnich%207%20dni;p,7/praca%20zdalna;wm,home-office?rd=0&et=1%2C3%2C17%2C4&pn={no_page}&tc=0&ws=0",
-]
-
-pracuj_job_keywords = [
-    "data",
-    "analyst",
-    "analityk",
-    "business",
-    "python",
-    "database",
-    "baz danych",
-    "product",
-]
-
-pracuj_excluded_keywords = [
-    "senior",
-    "starszy",
-    "german",
-    "italian",
-    "czech",
-    "portuguese",
-    "dutch",
-    "french",
-    "turkish",
-    "bulgarian",
-    "lithuanian",
-    "latvian",
-    "russian",
-    "finnish",
-    "danish",
-    "norwegian",
-    "swedish",
-    "niemiecki",
-    "francuski",
-    "rosyjski",
-    "romanian",
-    "hr ",
-    " hr ",
-    "sr "
-    " sr ",
-    "manager",
-    "head",
-    "kierownik",
-    "graduate programme",
-    "graduate",
-    "production",
-    "machine learning",
-    "spark",
-    "java",
-    "lead",
-    "doświadczon",
-    "doświadczeni",
-    "gcp",
-    "react",
-    "cloud",
-    "power platform",
-    " rpa ",
-    "rpa ",
-    " rpa",
-    "tableau",
-    "qlik",
-    "django",
-    "fullstack",
-    "full stack",
-    "oracle",
-    "3d",
-    "ecommerce",
-    "US hours",
-    "helpdesk",
-    "help desk",
-    "service desk",
-    "sharepoint",
-    "share point",
-]
 
 
 def get_a_page_content(pracuj_url, no_page):
