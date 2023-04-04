@@ -31,6 +31,10 @@ pracuj_excluded_keywords = [
     "francuski",
     "rosyjski",
     "romanian",
+    "slovenian",
+    "slovakian",
+    "słoweński",
+    "słowacki",
     "hr ",
     " hr ",
     "sr "
@@ -62,10 +66,20 @@ pracuj_excluded_keywords = [
     "oracle",
     "3d",
     "ecommerce",
+    "sap",
     "US hours",
     "helpdesk",
     "help desk",
     "service desk",
     "sharepoint",
     "share point",
+    "soc",
+]
+
+pracuj_desired_workplaces = [
+    "kraków",
+    "małopolskie",
+    "warszawa",
+    "mazowieckie",
+    "wrocław",
 ]
